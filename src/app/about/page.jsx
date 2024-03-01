@@ -27,7 +27,7 @@ const AboutPage = () =>{
                 {/* biography Container  */}
                 <div className="flex flex-col gap-12 justify-center">
                    <h1 className="font-bold text-2xl">Biography</h1>
-                   <p className="text-lg">Hi, I'm Nitin, and I am a Full Stack web Developer currently pursuing my Bachelor's of Technology with a degree in Information Technology. I excel in creating end-to-end solutions that seamlessly blend front-end aesthetics with robust back-end functionalities.My interest lies in leveraging a comprehensive skill set to design, develop, and optimize robust web applications.</p>
+                   <p className="text-lg">Hi, I am Nitin, and I am a Full Stack web Developer currently pursuing my Bachelor of Technology with a degree in Information Technology. I excel in creating end-to-end solutions that seamlessly blend front-end aesthetics with robust back-end functionalities.My interest lies in leveraging a comprehensive skill set to design, develop, and optimize robust web applications.</p>
                     <span className="italic"> Just keep pushing until you get there</span>
                      <div className="self-end italic">Nitin Kumar</div>
                 
