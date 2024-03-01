@@ -11,7 +11,7 @@ const items = [
       id: 1,
       color: "from-red-300 to-blue-300",
       title: "Article Summarizer",
-      desc: "Created a web app with React.js, Vite, Vanilla CSS, and Redux Toolkit, integrating OpenAI's AI Summarizer API. It allows users to  generate clear and concise summaries of lengthy articles.      ",
+      desc: "Created a web app with React.js, Vite, Vanilla CSS, and Redux Toolkit, integrating OpenAI AI Summarizer API. It allows users to  generate clear and concise summaries of lengthy articles.      ",
       img: "/articlesummarizer1.png",
       link: "https://articlesumarizer.netlify.app/",
     },
