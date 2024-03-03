@@ -2,5 +2,5 @@
 
 export default function myImageLoader({src , width, quality}) {
     if(src.startsWith('https://images.pexels.com')) return src
-    return `https://nextjsportfolio.onrender.com/${src}?w=${width}&q=${quality || 75}`
-}
+    return `https://your-vercel-project.vercel.app/${src}?w=${width}&q=${quality || 75}`
+}   
