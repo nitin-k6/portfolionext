@@ -19,7 +19,7 @@ const items = [
       id: 2,
       color: "from-blue-300 to-violet-300",
       title: "Full Stack Blog App",
-      desc: "Led the end-to-end development , creating a robust and user-friendly blog app tailored for seamless sharing of thoughts and ideas. Executed the integration of Node.js with Express.js on the back end, facilitating seamless communication with a MongoDB database. Noteworthy features encompass rock-solid user authentication, advanced search filters functionality, and streamlined post management for an optimal user experience.",
+      desc: "Led end-to-end development, creating a robust, user-friendly blog app for seamless sharing of ideas.Integrated Node.js with Express.js for seamless communication with MongoDB database on the backend. Noteworthy features encompass rock-solid user authentication, advanced search filters functionality, and streamlined post management for an optimal user experience.",
       img: "/blogimage.png",
       link: "https://reactblog3f.onrender.com",
     },
@@ -61,14 +61,14 @@ const Portfolio=()=>{
                 <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-purple-300 to-red-300" /> {/*optional- if we enter this div then only it starts moving */}
                  {items.map(item=> (
                     <div className={`h-screen w-screen flex items-center justify-center bg-gradient-to-r ${item.color}`} key={item.id}>
-                        <div className="flex flex-col gap-8  text-white">
+                        <div className="flex flex-col gap-4  text-white">
                             <h1 className="text-xl font-bold md:text-4xl lg:text-6xl ">{item.title}</h1>
                             <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px]">
                                 <Image src= {item.img} alt="" fill />
                             </div>
                             <p className="w-80 md:w-96 lg:w-[500px] xl:w-[600px] lg:text-lg">{item.desc}</p>
                             <Link href={item.link} className="flex justify-end">
-                               <button className="p-2 text-sm md:p-4 md:text-md lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">See Demo</button>
+                               <button className="p-2  text-sm md:p-4 md:text-md lg:text-md lg:m-1 bg-white text-gray-600 font-semibold m-4 rounded">See Demo</button>
                                </Link>
                         </div>
                     </div>
@@ -86,7 +86,7 @@ const Portfolio=()=>{
                             <textPath xlinkHref="#circlePath" className="text-xl">Full Stack Developer & UI Developer</textPath>
                          </text>
                        </motion.svg>
-                       <Link  href ="/contact"   className="w-16 h-16 md:w-28  md:h-28 absolute top-0 left-0 bottom-0 right-0 m-auto bg-black text-white rounded-full flex items-center justify-center ">Hire Me</Link>
+                       <Link href ="/contact" className="w-16 h-16 md:w-28  md:h-28 absolute top-0 left-0 bottom-0 right-0 m-auto bg-black text-white rounded-full flex items-center justify-center  ">Hire Me🫱🏻‍🫲🏻 </Link>
                     </div>
                  </div>
     </motion.div>

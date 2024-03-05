@@ -134,7 +134,6 @@ const listItemVariants = {
               {links.map((link) =>(  //mapping links array mentioned above instead of writing those one by one 
                   <motion.div  variants= {listItemVariants} className="" key={link.title}>
                 <Link href={link.url} >{link.title}</Link>  {/*key can also be link.url*/}
-           
                   </motion.div>
               ))}
             </motion.div>
