@@ -68,7 +68,7 @@ const Portfolio=()=>{
                             </div>
                             <p className="w-80 md:w-96 lg:w-[500px] xl:w-[600px] lg:text-lg">{item.desc}</p>
                             <Link href={item.link} className="flex justify-end">
-                               <button className="p-2  text-sm md:p-4 md:text-md lg:text-md lg:m-1 bg-white text-gray-600 font-semibold m-4 rounded">See Demo</button>
+                               <button className="p-2 text-sm md:p-4 md:text-md lg:text-md lg:m-1 bg-white text-gray-600 font-semibold m-4 rounded">See Demo</button>
                                </Link>
                         </div>
                     </div>
@@ -86,7 +86,7 @@ const Portfolio=()=>{
                             <textPath xlinkHref="#circlePath" className="text-xl">Full Stack Developer & UI Developer</textPath>
                          </text>
                        </motion.svg>
-                       <Link href ="/contact" className="w-16 h-16 md:w-28  md:h-28 absolute top-0 left-0 bottom-0 right-0 m-auto bg-black text-white rounded-full flex items-center justify-center  ">Hire Me🫱🏻‍🫲🏻 </Link>
+                       <Link href ="/contact" className="w-16 h-16 md:w-28  md:h-28 absolute top-0 left-0 bottom-0 right-0 m-auto bg-black text-white rounded-full flex items-center justify-center ">Hire Me🫱🏻‍🫲🏻 </Link>
                     </div>
                  </div>
     </motion.div>
