@@ -7,22 +7,23 @@ import Image from "next/image";
 import Link from "next/link";
 
 const items = [
+  {
+    id: 1,
+    color: "from-blue-300 to-violet-300",
+    title: "Full Stack Blog App",
+    desc: "Led end-to-end development, creating a robust, user-friendly blog app for seamless sharing of ideas.Integrated Node.js with Express.js for seamless communication with MongoDB database on the backend. Noteworthy features encompass rock-solid user authentication, advanced search filters functionality, and streamlined post management for an optimal user experience.",
+    img: "/blogging.jpg",
+    link: "https://reactblog3f.onrender.com",
+  },
     {
-      id: 1,
+      id: 2,
       color: "from-red-300 to-blue-300",
       title: "Article Summarizer",
       desc: "Created a web app with React.js, Vite, Vanilla CSS, and Redux Toolkit, integrating OpenAI AI Summarizer API. It allows users to  generate clear and concise summaries of lengthy articles.      ",
       img: "/articlesummarizer1.png",
       link: "https://articlesumarizer.netlify.app/",
     },
-    {
-      id: 2,
-      color: "from-blue-300 to-violet-300",
-      title: "Full Stack Blog App",
-      desc: "Led end-to-end development, creating a robust, user-friendly blog app for seamless sharing of ideas.Integrated Node.js with Express.js for seamless communication with MongoDB database on the backend. Noteworthy features encompass rock-solid user authentication, advanced search filters functionality, and streamlined post management for an optimal user experience.",
-      img: "/blogging.jpg",
-      link: "https://reactblog3f.onrender.com",
-    },
+    
     {
       id: 3,
       color: "from-violet-300 to-purple-300",
