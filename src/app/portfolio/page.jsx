@@ -20,7 +20,7 @@ const items = [
       color: "from-blue-300 to-violet-300",
       title: "Full Stack Blog App",
       desc: "Led end-to-end development, creating a robust, user-friendly blog app for seamless sharing of ideas.Integrated Node.js with Express.js for seamless communication with MongoDB database on the backend. Noteworthy features encompass rock-solid user authentication, advanced search filters functionality, and streamlined post management for an optimal user experience.",
-      img: "/blogimage.png",
+      img: "/blogging.jpg",
       link: "https://reactblog3f.onrender.com",
     },
     {
