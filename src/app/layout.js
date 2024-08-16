@@ -13,6 +13,20 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+    <head>
+        {/* Google Analytics */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-X0E5K8MLHT"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-X0E5K8MLHT');
+            `,
+          }}
+        />
+      </head>
       <body className={inter.className}>
         {/* <div className="w-screen h-screen bg-gradient-to-b from-blue-100 to-red-100">
           <div className="h-24">
