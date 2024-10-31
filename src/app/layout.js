@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
           {children}
           </div>
         </div> */}   {/* we have copied it in transitionProvider as  we wanted to use AnimatePresence(framer motion) which is client component and for that we have to remove meta data as it is server component*/}
-          <TransitionProvider>{children}</TransitionProvider>          {/* we  have used above code in transitionProvider component*/}
+          <TransitionProvider>{children}</TransitionProvider>         
         </body>
     </html>
   );

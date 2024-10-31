@@ -27,8 +27,8 @@ const AboutPage = () =>{
                 {/* biography Container  */}
                 <div className="flex flex-col gap-12 justify-center">
                    <h1 className="font-bold text-2xl">Biography</h1>
-                   <p className="text-lg">Hi, I am Nitin, and I am a Full Stack web Developer currently pursuing my Bachelor of Technology with a degree in Information Technology. I excel in creating end-to-end solutions that seamlessly blend front-end aesthetics with robust back-end functionalities.My interest lies in leveraging a comprehensive skill set to design, develop, and optimize robust web applications.</p>
-                    <span className="italic"> Just keep pushing until you get there</span>
+                   <p className="text-lg">Hi, I am Nitin, and I am a Full Stack Developer skilled in designing and implementing secure, responsive, and high-performance web applications. Proficient in modern frameworks like React, Next.js and Node.js. I specialize in creating seamless user experiences and optimizing application performance. My expertise includes integrating secure authentication methods like JWT, crafting efficient database solutions, and developing user-centric interfaces that enhance engagement and functionality. I am driven by a passion for leveraging cutting-edge technologies to deliver innovative solutions and solve complex challenges.</p>
+                    <span className="italic"> Stubborn about getting things done.</span>
                      <div className="self-end italic">Nitin Kumar</div>
                 
                   <motion.svg   initial={{opacity:0.2 ,y:0}} animate={{opacity:1, y:"10px"}}  transition={{repeat:Infinity, duration:3, ease: "easeInOut"}}   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width={50} height={50} >
@@ -41,7 +41,7 @@ const AboutPage = () =>{
                 <div className="flex flex-col gap-8 justify-center">
                   <h1 className="font-bold text-2xl">EDUCATION</h1>
                   <h2  className="font-bold text-lg">Global Institiute of Technology, Jaipur (2020-2024) </h2>
-                  <h3 className="p-0"> B.Tech in Information Technology  | <span className="font-semibold">CGPA- 8.57*</span> </h3>
+                  <h3 className="p-0"> B.Tech in Information Technology  | <span className="font-semibold">CGPA- 8.8</span> </h3>
                   <h2 className="font-bold text-lg">Army Public School Kaluchak, J&k</h2>
                   <h3 className="p-0 ">XII - 2019</h3>
                   <h3 className="p-0 ">X - 2017</h3>
@@ -67,8 +67,9 @@ const AboutPage = () =>{
                         <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black ">Node.js</div>
                         <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black ">Next.js</div>
                         <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black ">Framer Motion</div>
-                        <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black ">Framer Motion</div>
-                        <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black ">Vanilla CSS</div>
+                        <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black ">Redux Toolkit</div>
+                        <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black ">Context API</div>
+                        <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black ">JWT</div>
                         <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black ">Bootstrap</div>
                         <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black ">Git</div>
                         <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black ">Figma</div>
@@ -96,8 +97,8 @@ const AboutPage = () =>{
                          <div className="flex justify-between h-48"> {/* 1 --- experience list item*/}
                             {/* left */}
                             <div className="w-1/3 ">
-                             <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">Data Engineering Intern</div>
-                             <div className="p-3 text-sm italic">Worked as a Data Engineer</div>
+                             <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">Software Engineering </div>
+                             {/* <div className="p-3 text-sm italic">MERN Stack, SQL, Python</div> */}
                              <div className="p-3 text-red-400 text-sm font-semibold">May 2023 - July 2023</div>
                              <div className="p-1 rounded bg-white text-sm font-semibold w-fit">Celebal Technologies</div>
                             </div>
@@ -124,10 +125,10 @@ const AboutPage = () =>{
                             </div>
                             {/* right */}
                             <div className="w-1/3">
-                            {/* <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg ">Data Engineering Intern</div>
-                             <div className="p-3 text-sm italic">Worked as a Data Engineer</div>
-                             <div className="p-3 text-red-400 text-sm font-semibold">May 2023 - July 2023</div>
-                             <div className="p-1 rounded bg-white text-sm font-semibold w-fit">Celebal Technologies</div> */}
+                            <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg ">Frontend Developer</div>
+                             {/* <div className="p-3 text-sm italic">  </div> */}
+                             <div className="p-3 text-red-400 text-sm font-semibold">June 2024 - August 2024</div>
+                             <div className="p-1 rounded bg-white text-sm font-semibold w-fit">Abhiwan Technology</div> 
                             </div>
                          </div>
 
