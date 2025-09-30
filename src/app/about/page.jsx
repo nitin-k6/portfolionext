@@ -27,7 +27,7 @@ const AboutPage = () =>{
                 {/* biography Container  */}
                 <div className="flex flex-col gap-12 justify-center">
                    <h1 className="font-bold text-2xl">Biography</h1>
-                   <p className="text-lg">Hi, I am Nitin, and I am a Full Stack Developer skilled in designing and implementing secure, responsive, and high-performance web applications. Proficient in modern frameworks like React, Next.js and Node.js. I specialize in creating seamless user experiences and optimizing application performance. My expertise includes integrating secure authentication methods like JWT, crafting efficient database solutions, and developing user-centric interfaces that enhance engagement and functionality. I am driven by a passion for leveraging cutting-edge technologies to deliver innovative solutions and solve complex challenges.</p>
+                   <p className="text-lg">I'm a Product Engineer specializing in Generative AI and multi-agent systems, blending hands-on coding with product strategy to build intelligent, human-centered products.My expertise lies in designing and building AI systems for voice, text, and multimodal experiences, making interactions feel natural and seamless. I focus on multi-agent architectures, where specialized agents—like emotional companions, accountability partners, and health check-ins—work together to deliver more adaptive user experiences.On the engineering side, I architect scalable platforms, integrate APIs, and ensure smooth end-to-end journeys. On the product side, I translate research into strategy, shaping features that balance innovation with usability.I'm deeply interested in human-AI interaction—how natural language, voice, and personalized assistants can transform industries such as mental health, productivity, and education.Thriving in startup environments, I bring creativity, speed, and problem-solving to every challenge. Whether it's writing code, iterating on product direction, or experimenting with new AI workflows, my mission is simple: turn innovation into impact.</p>
                     <span className="italic"> Stubborn about getting things done.</span>
                      <div className="self-end italic">Nitin Kumar</div>
                 
@@ -61,11 +61,19 @@ const AboutPage = () =>{
                         <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black ">HTML</div>
                         <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black ">CSS</div>
                         <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black ">JavaScript</div>
+                        <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black ">TypeScript</div>
                         <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black ">MongoDB</div>
                         <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black ">Express.js</div>
                         <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black ">React.js</div>
                         <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black ">Node.js</div>
                         <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black ">Next.js</div>
+                        <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black ">RAG</div>
+                        <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black ">Langchain</div>
+                        <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black ">LlamaIndex</div>
+                        <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black ">CrewAI</div>
+                        <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black ">RazorPay</div>
+
+                        <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black ">Stripe</div>
                         <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black ">Framer Motion</div>
                         <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black ">Redux Toolkit</div>
                         <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black ">Context API</div>
@@ -90,70 +98,89 @@ const AboutPage = () =>{
 
 
             
-                 {/* experience container */}
-                <div className="flex flex-col gap-12 justify-center pb-48" ref={experienceRef} > 
-                      <motion.h1 initial={{x:"-300px"}} animate={isExperienceRefinView ? {x:"0"} : {}} transition={{delay:0.2}}    className="font-bold text-2xl">EXPERIENCE</motion.h1>  {/*  experience title */}
-                      <motion.div  initial={{x:"-300px"}} animate={isExperienceRefinView ? {x:"0"} : {}}   className=""> {/* experience list*/}
-                         <div className="flex justify-between h-48"> {/* 1 --- experience list item*/}
-                            {/* left */}
-                            <div className="w-1/3 ">
-                             <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">Software Engineering </div>
-                             {/* <div className="p-3 text-sm italic">MERN Stack, SQL, Python</div> */}
-                             <div className="p-3 text-red-400 text-sm font-semibold">May 2023 - July 2023</div>
-                             <div className="p-1 rounded bg-white text-sm font-semibold w-fit">Celebal Technologies</div>
-                            </div>
-                             
-                            {/* center */}
-                            <div className="w-1/6 flex justify-center ">
-                             <div className="w-1 h-full bg-gray-600 rounded relative"> {/* for the line*/}
-                               <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>  {/* for the circle*/}
-                             </div>
-                            </div>
-                            {/* right */}
-                            <div className="w-1/3 "></div>
-                         </div>
+              {/* experience container */}
+<div className="flex flex-col gap-12 justify-center pb-48" ref={experienceRef}> 
+  <motion.h1 
+    initial={{x:"-300px"}} 
+    animate={isExperienceRefinView ? {x:"0"} : {}} 
+    transition={{delay:0.2}}    
+    className="font-bold text-2xl"
+  >
+    EXPERIENCE
+  </motion.h1>  
+  
+  <motion.div  
+    initial={{x:"-300px"}} 
+    animate={isExperienceRefinView ? {x:"0"} : {}}   
+    className=""
+  > 
+    {/* 1 --- Odin Healthcare (Current) */}
+    <div className="flex justify-between h-64"> 
+      {/* left */}
+      <div className="w-1/3">
+        <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">Product Engineer</div>
+        <div className="p-3 text-sm italic">Mapaman SaaS Platform</div>
+        <div className="p-3 text-red-400 text-sm font-semibold">December 2024 - Present</div>
+        <div className="p-1 rounded bg-white text-sm font-semibold w-fit">Odin Healthcare Pvt Ltd</div>
+        <div className="p-3 text-xs text-gray-600">Panchkula, Haryana</div>
+      </div>
+       
+      {/* center */}
+      <div className="w-1/6 flex justify-center">
+        <div className="w-1 h-full bg-gray-600 rounded relative">
+          <div className="absolute w-5 h-5 rounded-full ring-4 ring-green-400 bg-white -left-2 top-0"></div>
+        </div>
+      </div>
+      
+      {/* right */}
+      <div className="w-1/3"></div>
+    </div>
 
-                         <div className="flex justify-between h-48"> {/*  2 ---experience list item*/}
-                            {/* left */}
-                            <div className="w-1/3"> </div>
-                             
-                            {/* center */}
-                            <div className="w-1/6 flex justify-center ">
-                             <div className="w-1 h-full bg-gray-600 rounded relative"> {/* for the line*/}
-                               <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>  {/* for the circle*/}
-                             </div>
-                            </div>
-                            {/* right */}
-                            <div className="w-1/3">
-                            <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg ">Frontend Developer</div>
-                             {/* <div className="p-3 text-sm italic">  </div> */}
-                             <div className="p-3 text-red-400 text-sm font-semibold">June 2024 - August 2024</div>
-                             <div className="p-1 rounded bg-white text-sm font-semibold w-fit">Abhiwan Technology</div> 
-                            </div>
-                         </div>
+    {/* 2 --- Abhiwan Technology */}
+    <div className="flex justify-between h-64"> 
+      {/* left */}
+      <div className="w-1/3"></div>
+       
+      {/* center */}
+      <div className="w-1/6 flex justify-center">
+        <div className="w-1 h-full bg-gray-600 rounded relative">
+          <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2 top-0"></div>
+        </div>
+      </div>
+      
+      {/* right */}
+      <div className="w-1/3">
+        <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">Full Stack Developer</div>
+        <div className="p-3 text-sm italic">MERN Stack Development</div>
+        <div className="p-3 text-red-400 text-sm font-semibold">June 2024 - August 2024</div>
+        <div className="p-1 rounded bg-white text-sm font-semibold w-fit">Abhiwan Technology Pvt Ltd</div>
+        <div className="p-3 text-xs text-gray-600">Noida, UP</div>
+      </div>
+    </div>
 
-     
-                         <div className="flex justify-between h-48"> {/* experience list item*/}      {/* 3*/}
-                            {/* left */}
-                            <div className="w-1/3">
-                            {/* <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg ">Data Engineering Intern</div>
-                             <div className="p-3 text-sm italic">Worked as a Data Engineer</div>
-                             <div className="p-3 text-red-400 text-sm font-semibold">May 2023 - July 2023</div>
-                             <div className="p-1 rounded bg-white text-sm font-semibold w-fit">Celebal Technologies</div> */}
-                            </div>
-                             
-                            {/* center */}
-                             <div className="w-1/6 flex justify-center ">
-                             <div className="w-1 h-full bg-gray-600 rounded relative"> {/* for the line*/}
-                               <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>  {/* for the circle*/}
-                             </div>
-                            </div>
-                            {/* right */}
-                            <div className="w-1/3 "></div>
-                         </div> 
-                          
-                      </motion.div>
-                </div>
+    {/* 3 --- Celebal Technologies */}
+    <div className="flex justify-between h-64"> 
+      {/* left */}
+      <div className="w-1/3">
+        <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">Software Engineer</div>
+        <div className="p-3 text-sm italic">SQL, Azure Integration</div>
+        <div className="p-3 text-red-400 text-sm font-semibold">May 2023 - July 2023</div>
+        <div className="p-1 rounded bg-white text-sm font-semibold w-fit">Celebal Technologies</div>
+        <div className="p-3 text-xs text-gray-600">Jaipur, Rajasthan</div>
+      </div>
+       
+      {/* center */}
+      <div className="w-1/6 flex justify-center">
+        <div className="w-1 h-full bg-gray-600 rounded relative">
+          <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2 top-0"></div>
+        </div>
+      </div>
+      
+      {/* right */}
+      <div className="w-1/3"></div>
+    </div> 
+  </motion.div>
+</div>
             </div>
                  {/* svg container */}
                 <div className="hidden lg:block w-1/3 sticky top-0 z-30 xl:1/2"> {/* creating svg in a new component(brain) coz already code is too long*/}
@@ -165,4 +192,11 @@ const AboutPage = () =>{
 }
 
 export default AboutPage;
+
+
+
+
+
+
+
 
