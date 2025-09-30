@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 // import Navbar from "./components/navbar";
 import TransitionProvider from "./components/transitionProvider";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,17 +16,18 @@ export default function RootLayout({ children }) {
     <html lang="en">
     <head>
         {/* Google Analytics */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-X0E5K8MLHT"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-X0E5K8MLHT');
-            `,
-          }}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-X0E5K8MLHT"
+          strategy="afterInteractive"
         />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-X0E5K8MLHT');
+          `}
+        </Script>
       </head>
       <body className={inter.className}>
         {/* <div className="w-screen h-screen bg-gradient-to-b from-blue-100 to-red-100">
